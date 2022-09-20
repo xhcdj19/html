@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevos tipos de input de HTML 5</title>
+</head>
+<body>
+
+    <h1>Demo de nuevos tipos de input de HTML5</h1>
+    <p>Este formulario demuestra los nuevos tipos de
+        elementos input de HTML5 y los atributos placeholder,
+        required y autofocus.
+    </p>
+
+    <form method="post" action="http://www.deitel.com">
+
+        <p>
+            <label for="">Color:
+
+                <input type="color" autofocus/>
+                (codigo hexadecimal como #ADD8E6)
+            </label>
+        </p>
+
+        <p>
+            <label for="">Fecha:
+                <input type="date"/>
+                (aaaa-mm-dd)
+
+
+            </label>
+        </p>
+
+        <p>
+            <label for="">Hora y fecha:
+
+                <input type="datetime" />
+                    (aaaa-mm-ddThh:mm+ff:gg, como 27-01-2012T03:15)
+            </label>
+        </p>
+
+        <p>
+            <label for="">Hora y fech-local
+
+                <input type="datetime-local" />
+                (aaaa-mm-ddThh:mm, como 2012-01-27T03:15)
+            </label>
+        </p>
+
+        <p>
+            <label for="">Email:
+
+                <input type="email" placeholder="nombre@dominio.com"
+                required /> (nombre@dominio.com)
+
+            </label>
+
+        </p>
+
+        <p>
+            <label for="">Mes:
+
+                <input type="month" /> (aaaa-mm)
+            </label>
+        </p>
+
+        <p>
+            <label for="">Número:
+
+                <input type="number"
+                min="0"
+                max="7"
+                step="1"
+                value="4" />
+            </label>(Escriba un numero entre 0 y 7)
+        </p>
+
+        <p>
+            <label for="">Rango:
+                0 <input type="range" 
+                min="0"
+                max="20"
+                value="10" /> 20
+            </label>
+        </p>
+
+        
+        <p>
+            <label for="">Busqueda:
+
+                <input type="search" placeholder="Consulta de busqueda" />
+            </label> Escriba aquí su consulta de busqueda
+        </p>
+
+        <p>
+            <label for="">Tel:
+                <input type="tel" placeholder="(###)###-####"
+                pattern="\(\d{3}-\d{4})" required />
+                (###) ###-####
+
+            </label>
+        </p>
+
+        <p>
+            <label for="">Hora:
+                <input type="time" /> (hh:mm)
+
+            </label>
+        </p>
+
+        <p>
+            <label for="">URL:
+                <input type="url"
+                placeholder="http://www.nombredominio.com" />
+                (http://www.nombredominio.com)
+
+            </label>
+        </p>
+
+        <p>
+            <label for="">Semana:
+                <input type="week" />
+                (aaaa-Wnn, tal como 2012-W01)
+
+            </label>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </p>
+
+
+
+    </form>
+    
+</body>
+</html>
