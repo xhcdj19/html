@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUna tabla de HTML5 simple</title>
+</head>
+<body>
+
+    <table border="1">
+
+        <!-- la etiqueta caption sintetiza el contenido de  -->
+        <!-- la tabla (esto ayuda a las personas con discapacidad visual) -->
+
+
+        <caption><strong>
+            Tabla de frutas (1era columna) y sus precios (2da columna)
+        </strong></caption>
+
+        <thead>
+            <tr><!--  tr inserta una fila en la tabla -->
+
+                <th>Fruta</th> <!--  inserta un encabezado -->
+                <th>Precio</th>
+            </tr>
+        </thead>
+
+        <!-- la seccion tfoot aparece al último en la tabla -->
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th>$3.75</th>
+            </tr>
+        </tfoot>
+
+        <!-- Todo el contenido de la tabla está encerrado -->
+        <!-- dentro del elemento tbody -->
+
+        <tbody>
+
+            <tr>
+                <td>Manzana</td><!--  Inserta una celda de datos -->
+                <td>$0.25</td>
+            </tr>
+            <tr>
+                <td>Naranja</td><!--  Inserta una celda de datos -->
+                <td>$0.50</td>
+
+            </tr>
+
+            <tr>
+                <td>Platano</td><!--  Inserta una celda de datos -->
+                <td>$1.00</td>
+            </tr>
+
+            <tr>
+                <td>Piña</td>
+                <td>$2.00</td>
+            </tr>
+            
+
+
+        </tbody>
+
+    </table>
+
+    
+</body>
+</html>
